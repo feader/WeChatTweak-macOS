@@ -6,16 +6,10 @@
 //  Copyright © 2017年 Sunnyyoung. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <Cocoa/Cocoa.h>
+#import <AppKit/AppKit.h>
 #import <objc/runtime.h>
 #import <objc/message.h>
-
-typedef NS_ENUM(NSUInteger, RevokeNotificationType) {
-    RevokeNotificationTypeFollow = 0,
-    RevokeNotificationTypeReceiveAll,
-    RevokeNotificationTypeDisable,
-};
+#import <JRSwizzle/JRSwizzle.h>
 
 typedef NS_ENUM(unsigned int, MessageDataType) {
     MessageDataTypeText     = 1,
@@ -26,9 +20,6 @@ typedef NS_ENUM(unsigned int, MessageDataType) {
     MessageDataTypeAppUrl   = 49,
     MessageDataTypePrompt   = 10000
 };
-
-static NSString * const WeChatTweakPreferenceAutoAuthKey = @"WeChatTweakPreferenceAutoAuthKey";
-static NSString * const WeChatTweakPreferenceRevokeNotificationTypeKey = @"WeChatTweakPreferenceRevokeNotificationTypeKey";
 
 @interface NSString (MD5)
 
@@ -76,6 +67,13 @@ static NSString * const WeChatTweakPreferenceRevokeNotificationTypeKey = @"WeCha
 
 @end
 
+@interface ReaderWrap : NSObject
+
+@property(retain, nonatomic) NSString *m_nsTitle;
+@property(retain, nonatomic) NSString *m_nsUrl;
+
+@end
+
 @interface WCContactData : NSObject
 
 @property(nonatomic) unsigned int m_uiCertificationFlag;
@@ -115,44 +113,9 @@ static NSString * const WeChatTweakPreferenceRevokeNotificationTypeKey = @"WeCha
 
 @end
 
-@interface AccountService: NSObject
-
-- (BOOL)canAutoAuth;
-- (void)AutoAuth;
-
-@end
-
 @interface MMAvatarService: NSObject
 
 - (NSString *)avatarCachePath;
-
-@end
-
-@interface MMSessionMgr: NSObject
-
-- (void)loadSessionData;
-- (void)loadBrandSessionData;
-
-@end
-
-@interface RevokeMsgItem : NSObject
-
-@property (nonatomic, assign) unsigned int createTime;
-@property (nonatomic, retain) NSString *svrId;
-@property (nonatomic, retain) NSString *content;
-
-@end
-
-@interface MMRevokeMsgDB : NSObject
-
-- (BOOL)insertRevokeMsg:(id)msg;
-- (id)getRevokeMsg:(NSString *)svrId;
-
-@end
-
-@interface MMRevokeMsgService : NSObject
-
-@property (nonatomic, strong) MMRevokeMsgDB *db;
 
 @end
 
@@ -193,6 +156,19 @@ static NSString * const WeChatTweakPreferenceRevokeNotificationTypeKey = @"WeCha
 
 @end
 
+@interface MMAppSingleReaderMessageCellView : MMMessageCellView
+
+@property(retain, nonatomic) ReaderWrap *readerData;
+
+@end
+
+@interface MMAppMultipleReaderMessageCellView : MMMessageCellView
+
+@property(retain, nonatomic) NSArray<ReaderWrap *> *readerMessages;
+@property(assign, nonatomic) NSUInteger selectedReaderWrapIndex;
+
+@end
+
 @interface MMService : NSObject
 
 @end
@@ -200,6 +176,19 @@ static NSString * const WeChatTweakPreferenceRevokeNotificationTypeKey = @"WeCha
 @interface EmoticonMgr : MMService
 
 - (id)getEmotionDataWithMD5:(id)arg1;
+
+@end
+
+@interface FFProcessReqsvrZZ : NSObject
+
+- (id)GetMsgData:(id)arg2 localId:(long long)arg3;
+- (id)GetMsgData:(id)arg2 svrId:(long long)arg3;
+- (void)AddLocalMsg:(id)arg2 msgData:(id)arg3;
+- (void)ModifyMsgData:(id)arg2 msgData:(id)arg3;
+- (void)notifyAddMsgOnMainThread:(id)arg2 msgData:(id)arg3;
+- (void)notifyModMsgOnMainThread:(id)arg2 msgData:(id)arg3;
+- (void)notifyDelMsgOnMainThread:(id)arg2 msgData:(id)arg3 isRevoke:(BOOL)arg4;
+- (void)notifyUIAndSessionOnMainThread:(id)arg2 withMsg:(id)arg3;
 
 @end
 

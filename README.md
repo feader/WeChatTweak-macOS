@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](LICENSE)
 [![README](https://img.shields.io/badge/README-English-blue.svg)](README-English.md)
 [![README](https://img.shields.io/badge/README-中文-blue.svg)](README.md)
-[![README](https://img.shields.io/badge/Telegram-WeChatTweak-brightgreen.svg)](https://t.me/joinchat/B0vW8kPU5OrwdC1qRbaqRA)
+[![README](https://img.shields.io/badge/Telegram-WeChatTweak-brightgreen.svg)](https://t.me/wechattweak)
 
 微信 macOS 客户端增强 Tweak 动态库。
 
@@ -21,7 +21,7 @@
   - 支持二维码识别
   - 支持右键直接复制链接
   - 支持由系统默认浏览器直接打开
-- 重新打开应用无需手机认证
+- ~~重新打开应用无需手机认证~~（官方已经支持）
 - UI界面设置面板
 - 支持 Alfred workflow
 - 支持 Launchbar action
@@ -37,8 +37,8 @@
 安装/更新/卸载 Tweak:
 
   ```bash
-  $ sudo wechattweak-cli --install   # 安装
-  $ sudo wechattweak-cli --uninstall # 卸载
+  $ sudo wechattweak-cli install   # 安装/更新
+  $ sudo wechattweak-cli uninstall # 卸载
   ```
 
 ## 截图
@@ -57,18 +57,23 @@
 
 ## FAQ
 
-1. 功能失效？  
+- 功能失效？  
   请提交 **issue** 然后等待，或提交 **pull request** 一起发电。
-2. Issue 没有响应 or 回复？  
+- Issue 没有响应 or 回复？  
   开源项目，用爱发电，耐心等。
-3. 兼容旧版本客户端吗？  
-  不，为了降低维护成本和保证更新速度，默认只支持 **最新 App Store** 版本客户端。
-4. 会封号吗？  
+- 兼容旧版本客户端吗？  
+  不，为了降低维护成本和保证更新速度，默认只支持**最新**版本客户端。
+- 会封号吗？  
   在**只使用该工具**的情况下**没有**出现过封号/风险提示，若有**使用过其他同类工具**则有可能会出现封号/风险提示，因此风险自负。
-5. 安装出现 `codesign_allocate helper tool cannot be found or used` 错误？  
+- 安装出现 `codesign_allocate helper tool cannot be found or used` 错误？  
   该错误为系统问题，暂未清楚原因，一般情况下重新执行安装操作即可。
-6. 安装完打开微信客户端提示 `没有权限打开应用程序`？  
-  先卸载，再重新安装一次即可，如仍无法解决请重启电脑。
+- 安装完打开微信客户端提示 `没有权限打开应用程序`？  
+  先卸载，再重新安装一次即可，如仍无法解决请重启电脑。实在搞不定的，到 [issues](https://github.com/sunnyyoung/WeChatTweak-macOS/issues) 里找找类似问题并尝试解决。
+- 截图失效？  
+  系统偏好设置 -> 隐私 -> 删除微信并重新添加 -> 重启微信客户端。
+- 出现`“WeChat.app” cannot be opened because the developer cannot be verified.`怎么办？  
+  进入 `WeChat.app` 所在目录，通过右键菜单打开。
+- 理性讨论。
 
 ## 参考
 

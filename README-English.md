@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](LICENSE)
 [![README](https://img.shields.io/badge/README-English-blue.svg)](README-English.md)
 [![README](https://img.shields.io/badge/README-中文-blue.svg)](README.md)
-[![README](https://img.shields.io/badge/Telegram-WeChatTweak-brightgreen.svg)](https://t.me/joinchat/B0vW8kPU5OrwdC1qRbaqRA)
+[![README](https://img.shields.io/badge/Telegram-WeChatTweak-brightgreen.svg)](https://t.me/wechattweak)
 
 A dynamic library tweak for WeChat macOS.
 
@@ -21,7 +21,7 @@ A dynamic library tweak for WeChat macOS.
   - Support QRCode identifying
   - Support right-click copy link directly
   - Support opened by the system default browser directly
-- Auto login without authentication
+- ~~Auto login without authentication~~ (Already supported by official)
 - UI Interface settings panel
 - Alfred workflow support
 - Launchbar action support
@@ -31,15 +31,14 @@ A dynamic library tweak for WeChat macOS.
 Install command line tool [WeChatTweak-CLI](https://github.com/Sunnyyoung/WeChatTweak-CLI):
 
   ```bash
-  $ brew tap sunnyyoung/repo
-  $ brew install wechattweak-cli
+  $ brew tap sunnyyoung/repo/wechattweak-cli
   ```
 
 Install/Upgrade/Uninstall Tweak:
 
   ```bash
-  $ sudo wechattweak-cli --install   # Install
-  $ sudo wechattweak-cli --uninstall # Uninstall
+  $ sudo wechattweak-cli install   # Install/Uninstall
+  $ sudo wechattweak-cli uninstall # Uninstall
   ```
 
 ## Screenshots

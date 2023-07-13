@@ -3,24 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D14E5A41F6447DB00D75132 /* AlfredManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D14E5A21F6447DB00D75132 /* AlfredManager.h */; };
-		7D14E5A51F6447DB00D75132 /* AlfredManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D14E5A31F6447DB00D75132 /* AlfredManager.m */; };
-		7D2194C32646E62E0068F4CC /* AutoAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D2194C12646E62E0068F4CC /* AutoAuth.h */; };
-		7D2194C42646E62E0068F4CC /* AutoAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2194C22646E62E0068F4CC /* AutoAuth.m */; };
-		7D2194CB264701950068F4CC /* AntiRevoke.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D2194C9264701950068F4CC /* AntiRevoke.h */; };
+		7D14E5A41F6447DB00D75132 /* Alfred.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D14E5A21F6447DB00D75132 /* Alfred.h */; };
+		7D14E5A51F6447DB00D75132 /* Alfred.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D14E5A31F6447DB00D75132 /* Alfred.m */; };
 		7D2194CC264701950068F4CC /* AntiRevoke.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2194CA264701950068F4CC /* AntiRevoke.m */; };
 		7D54A05C20E74D9400CB5306 /* TweakPreferencesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D54A05E20E74D9400CB5306 /* TweakPreferencesController.xib */; };
 		7D54A06A20E74FE500CB5306 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D54A06C20E74FE500CB5306 /* Localizable.strings */; };
+		7D64150827A9469900A8A398 /* ContextMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D64150627A9469900A8A398 /* ContextMenu.m */; };
+		7D64150C27A94B9600A8A398 /* Directory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D64150B27A94B9600A8A398 /* Directory.m */; };
+		7D64150E27A94BEA00A8A398 /* MultipleInstances.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D64150D27A94BEA00A8A398 /* MultipleInstances.m */; };
+		7D64151027A94DE200A8A398 /* PreferencesWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D64150F27A94DE200A8A398 /* PreferencesWindow.m */; };
 		7D9049F51F82A41A004E6370 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D9049F31F82A415004E6370 /* fishhook.c */; };
 		7D9049F61F82A41A004E6370 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9049F41F82A415004E6370 /* fishhook.h */; };
-		7D9049F91F82B6FB004E6370 /* NSString+WeChatTweak.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9049F81F82B6FB004E6370 /* NSString+WeChatTweak.m */; };
-		7D9049FA1F82B708004E6370 /* NSString+WeChatTweak.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9049F71F82B6FB004E6370 /* NSString+WeChatTweak.h */; };
-		7DB8AFBE206211D900E683AE /* WTConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DB8AFBC206211D900E683AE /* WTConfigManager.h */; };
-		7DB8AFBF206211D900E683AE /* WTConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB8AFBD206211D900E683AE /* WTConfigManager.m */; };
 		7DF8422C1F40583F00D42D79 /* WeChatTweak.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DF8422A1F40583F00D42D79 /* WeChatTweak.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7DF842341F4058AB00D42D79 /* WeChatTweak.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF842331F4058AB00D42D79 /* WeChatTweak.m */; };
 		7DF842521F4058C600D42D79 /* TweakPreferencesController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DF8424F1F4058C600D42D79 /* TweakPreferencesController.h */; };
@@ -34,25 +31,22 @@
 
 /* Begin PBXFileReference section */
 		153504EC5C9196C0D85213CF /* libPods-WeChatTweak.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeChatTweak.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D14E5A21F6447DB00D75132 /* AlfredManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlfredManager.h; sourceTree = "<group>"; };
-		7D14E5A31F6447DB00D75132 /* AlfredManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlfredManager.m; sourceTree = "<group>"; };
-		7D2194C12646E62E0068F4CC /* AutoAuth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoAuth.h; sourceTree = "<group>"; };
-		7D2194C22646E62E0068F4CC /* AutoAuth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoAuth.m; sourceTree = "<group>"; };
-		7D2194C9264701950068F4CC /* AntiRevoke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AntiRevoke.h; sourceTree = "<group>"; };
+		7D14E5A21F6447DB00D75132 /* Alfred.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alfred.h; sourceTree = "<group>"; };
+		7D14E5A31F6447DB00D75132 /* Alfred.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alfred.m; sourceTree = "<group>"; };
 		7D2194CA264701950068F4CC /* AntiRevoke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AntiRevoke.m; sourceTree = "<group>"; };
 		7D54A05F20E74E4600CB5306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TweakPreferencesController.xib; sourceTree = "<group>"; };
 		7D54A07020E74FFD00CB5306 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7D54A07120E7535F00CB5306 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		7D54A07220E7536300CB5306 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		7D64150627A9469900A8A398 /* ContextMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContextMenu.m; sourceTree = "<group>"; };
+		7D64150B27A94B9600A8A398 /* Directory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Directory.m; sourceTree = "<group>"; };
+		7D64150D27A94BEA00A8A398 /* MultipleInstances.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultipleInstances.m; sourceTree = "<group>"; };
+		7D64150F27A94DE200A8A398 /* PreferencesWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreferencesWindow.m; sourceTree = "<group>"; };
 		7D9049F31F82A415004E6370 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
 		7D9049F41F82A415004E6370 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
-		7D9049F71F82B6FB004E6370 /* NSString+WeChatTweak.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WeChatTweak.h"; sourceTree = "<group>"; };
-		7D9049F81F82B6FB004E6370 /* NSString+WeChatTweak.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WeChatTweak.m"; sourceTree = "<group>"; };
-		7DB8AFBC206211D900E683AE /* WTConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTConfigManager.h; sourceTree = "<group>"; };
-		7DB8AFBD206211D900E683AE /* WTConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTConfigManager.m; sourceTree = "<group>"; };
-		7DF7065D23A8B69000DEA8F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TweakPreferencesController.xib; sourceTree = "<group>"; };
-		7DF7065E23A8B69A00DEA8F6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/TweakPreferencesController.xib"; sourceTree = "<group>"; };
-		7DF7065F23A8B6A400DEA8F6 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hant"; path = "zh-Hant.lproj/TweakPreferencesController.xib"; sourceTree = "<group>"; };
+		7DAE1DD727E828960009C01E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TweakPreferencesController.strings; sourceTree = "<group>"; };
+		7DAE1DD927E828A50009C01E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/TweakPreferencesController.strings"; sourceTree = "<group>"; };
+		7DAE1DDB27E828B00009C01E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/TweakPreferencesController.strings"; sourceTree = "<group>"; };
 		7DF842271F40583F00D42D79 /* WeChatTweak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeChatTweak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DF8422A1F40583F00D42D79 /* WeChatTweak.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeChatTweak.h; sourceTree = "<group>"; };
 		7DF8422B1F40583F00D42D79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,17 +81,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7D5AAF3320DF4B7B00860EEE /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				7D14E5A21F6447DB00D75132 /* AlfredManager.h */,
-				7D14E5A31F6447DB00D75132 /* AlfredManager.m */,
-				7DB8AFBC206211D900E683AE /* WTConfigManager.h */,
-				7DB8AFBD206211D900E683AE /* WTConfigManager.m */,
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
 		7D5AAF3520DF4B9700860EEE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,8 +96,6 @@
 			children = (
 				7DF842571F4058DD00D42D79 /* NSBundle+WeChatTweak.h */,
 				7DF842581F4058DD00D42D79 /* NSBundle+WeChatTweak.m */,
-				7D9049F71F82B6FB004E6370 /* NSString+WeChatTweak.h */,
-				7D9049F81F82B6FB004E6370 /* NSString+WeChatTweak.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -161,14 +142,16 @@
 			children = (
 				7DF8422A1F40583F00D42D79 /* WeChatTweak.h */,
 				7DF842331F4058AB00D42D79 /* WeChatTweak.m */,
-				7D2194C12646E62E0068F4CC /* AutoAuth.h */,
-				7D2194C22646E62E0068F4CC /* AutoAuth.m */,
-				7D2194C9264701950068F4CC /* AntiRevoke.h */,
 				7D2194CA264701950068F4CC /* AntiRevoke.m */,
+				7D64150B27A94B9600A8A398 /* Directory.m */,
+				7D64150D27A94BEA00A8A398 /* MultipleInstances.m */,
+				7D64150F27A94DE200A8A398 /* PreferencesWindow.m */,
+				7D64150627A9469900A8A398 /* ContextMenu.m */,
+				7D14E5A21F6447DB00D75132 /* Alfred.h */,
+				7D14E5A31F6447DB00D75132 /* Alfred.m */,
 				7D5AAF3720DF4BB300860EEE /* Vendor */,
 				7D5AAF3620DF4BA400860EEE /* Category */,
 				7D5AAF3520DF4B9700860EEE /* Controller */,
-				7D5AAF3320DF4B7B00860EEE /* Manager */,
 				7DF842631F40594400D42D79 /* Resources */,
 				7D5AAF3820DF4BC400860EEE /* Supporting Files */,
 			);
@@ -199,16 +182,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D9049FA1F82B708004E6370 /* NSString+WeChatTweak.h in Headers */,
 				7DF8422C1F40583F00D42D79 /* WeChatTweak.h in Headers */,
 				7DF8425B1F4058DD00D42D79 /* NSBundle+WeChatTweak.h in Headers */,
-				7DB8AFBE206211D900E683AE /* WTConfigManager.h in Headers */,
 				7D9049F61F82A41A004E6370 /* fishhook.h in Headers */,
-				7D14E5A41F6447DB00D75132 /* AlfredManager.h in Headers */,
-				7D2194CB264701950068F4CC /* AntiRevoke.h in Headers */,
+				7D14E5A41F6447DB00D75132 /* Alfred.h in Headers */,
 				7DF842601F40590500D42D79 /* WeChatTweakHeaders.h in Headers */,
 				7DF842521F4058C600D42D79 /* TweakPreferencesController.h in Headers */,
-				7D2194C32646E62E0068F4CC /* AutoAuth.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +220,8 @@
 		7DF8421E1F40583F00D42D79 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = Sunnyyoung;
 				TargetAttributes = {
 					7DF842261F40583F00D42D79 = {
@@ -286,6 +266,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		7DE5D07F218319DF00ABCE56 /* Export Framework */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -327,15 +308,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D14E5A51F6447DB00D75132 /* AlfredManager.m in Sources */,
+				7D14E5A51F6447DB00D75132 /* Alfred.m in Sources */,
 				7DF842531F4058C600D42D79 /* TweakPreferencesController.m in Sources */,
-				7D9049F91F82B6FB004E6370 /* NSString+WeChatTweak.m in Sources */,
+				7D64150827A9469900A8A398 /* ContextMenu.m in Sources */,
 				7D2194CC264701950068F4CC /* AntiRevoke.m in Sources */,
 				7DF842341F4058AB00D42D79 /* WeChatTweak.m in Sources */,
-				7DB8AFBF206211D900E683AE /* WTConfigManager.m in Sources */,
 				7D9049F51F82A41A004E6370 /* fishhook.c in Sources */,
+				7D64151027A94DE200A8A398 /* PreferencesWindow.m in Sources */,
+				7D64150E27A94BEA00A8A398 /* MultipleInstances.m in Sources */,
 				7DF8425C1F4058DD00D42D79 /* NSBundle+WeChatTweak.m in Sources */,
-				7D2194C42646E62E0068F4CC /* AutoAuth.m in Sources */,
+				7D64150C27A94B9600A8A398 /* Directory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,9 +328,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				7D54A05F20E74E4600CB5306 /* Base */,
-				7DF7065D23A8B69000DEA8F6 /* en */,
-				7DF7065E23A8B69A00DEA8F6 /* zh-Hans */,
-				7DF7065F23A8B6A400DEA8F6 /* zh-Hant */,
+				7DAE1DD727E828960009C01E /* en */,
+				7DAE1DD927E828A50009C01E /* zh-Hans */,
+				7DAE1DDB27E828B00009C01E /* zh-Hant */,
 			);
 			name = TweakPreferencesController.xib;
 			sourceTree = "<group>";
@@ -373,7 +355,7 @@
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -392,6 +374,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -399,8 +382,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 12;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				CURRENT_PROJECT_VERSION = 23;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -417,8 +399,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MARKETING_VERSION = 1.2.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 1.4.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -433,7 +415,7 @@
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -452,6 +434,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -459,8 +442,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 12;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				CURRENT_PROJECT_VERSION = 23;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -471,8 +453,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MARKETING_VERSION = 1.2.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 1.4.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -485,7 +467,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 13;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 9;
@@ -493,8 +475,11 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "WeChatTweak/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.2.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = app.tweaks.WeChatTweak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -506,7 +491,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 13;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 9;
@@ -514,8 +499,11 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "WeChatTweak/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.2.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = app.tweaks.WeChatTweak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

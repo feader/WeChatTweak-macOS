@@ -8,14 +8,11 @@
 
 #import "TweakPreferencesController.h"
 #import "NSBundle+WeChatTweak.h"
-#import "WTConfigManager.h"
 
 @interface TweakPreferencesController () <MASPreferencesViewController>
 
-@property (weak) IBOutlet NSPopUpButton *autoAuthButton;
 @property (weak) IBOutlet NSPopUpButton *notificationTypeButton;
-@property (weak) IBOutlet NSPopUpButton *compressedJSONEnabledButton;
-@property (weak) IBOutlet NSPopUpButton *revokedMessageStyleButton;
+@property (weak) IBOutlet NSColorWell *maskColorWell;
 
 @end
 
@@ -23,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [NSColorPanel.sharedColorPanel setShowsAlpha:YES];
 }
 
 - (void)viewWillAppear {
@@ -31,36 +29,18 @@
 }
 
 - (void)reloadData {
-    WTConfigManager *configManager = WTConfigManager.sharedInstance;
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    BOOL enabledAutoAuth = [userDefaults boolForKey:WeChatTweakPreferenceAutoAuthKey];
-    RevokeNotificationType notificationType = [userDefaults integerForKey:WeChatTweakPreferenceRevokeNotificationTypeKey];
-    [self.autoAuthButton selectItemAtIndex:enabledAutoAuth ? 1 : 0];
-    [self.notificationTypeButton selectItemAtIndex:notificationType];
-    [self.compressedJSONEnabledButton selectItemAtIndex:configManager.compressedJSONEnabled ? 0 : 1];
-    [self.revokedMessageStyleButton selectItemAtIndex:configManager.revokedMessageStyle];
+    self.maskColorWell.color = WeChatTweak.maskColor;
+    [self.notificationTypeButton selectItemAtIndex:WeChatTweak.notificationType];
 }
 
 #pragma mark - Event method
 
-- (IBAction)switchAutoAuthAction:(NSPopUpButton *)sender {
-    BOOL enabled = sender.indexOfSelectedItem == 1;
-    [[NSUserDefaults standardUserDefaults] setBool:enabled forKey:WeChatTweakPreferenceAutoAuthKey];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-}
-
 - (IBAction)switchNotificationTypeAction:(NSPopUpButton *)sender {
-    RevokeNotificationType type = sender.indexOfSelectedItem;
-    [[NSUserDefaults standardUserDefaults] setInteger:type forKey:WeChatTweakPreferenceRevokeNotificationTypeKey];
+    WeChatTweak.notificationType = sender.indexOfSelectedItem;
 }
 
-- (IBAction)switchCompressedJSONEnabledAction:(NSPopUpButton *)sender {
-    BOOL enabled = sender.indexOfSelectedItem == 0;
-    WTConfigManager.sharedInstance.compressedJSONEnabled = enabled;
-}
-
-- (IBAction)switchRevokedMessageStyleButton:(NSPopUpButton *)sender {
-    WTConfigManager.sharedInstance.revokedMessageStyle = sender.indexOfSelectedItem;
+- (IBAction)changeMaskColorAction:(NSColorWell *)sender {
+    WeChatTweak.maskColor = sender.color;
 }
 
 #pragma mark - MASPreferencesViewController
